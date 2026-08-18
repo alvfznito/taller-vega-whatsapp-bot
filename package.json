@@ -1,0 +1,32 @@
+{
+  "name": "taller-vega-whatsapp-bot",
+  "version": "1.0.0",
+  "description": "Chatbot de WhatsApp para Talleres Vega — demo de venta MUESTRATE! (pilar 5)",
+  "private": true,
+  "type": "commonjs",
+  "main": "dist/bot.js",
+  "scripts": {
+    "dev": "tsx watch src/bot.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/bot.js"
+  },
+  "dependencies": {
+    "@builderbot/bot": "1.4.2",
+    "@builderbot/provider-baileys": "1.4.2",
+    "@supabase/supabase-js": "^2.112.3",
+    "dotenv": "^17.4.2",
+    "openai": "^7.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  },
+  "overrides": {
+    "baileys": "7.0.0-rc14",
+    "sharp": "0.35.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

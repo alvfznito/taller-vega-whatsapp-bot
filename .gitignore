@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# WhatsApp session — nunca subir a git, contiene las credenciales de la sesión conectada
+bot_sessions/
+bot.qr.png
+*.qr.png
+
+# Baileys store (historial de eventos, puede crecer bastante)
+baileys_store.json
+
+# Env
+.env
+.env.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
